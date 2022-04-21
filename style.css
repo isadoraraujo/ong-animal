@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(127, 209, 209);
+    width: 100%;
+    height: 8rem;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: 128px;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h1 {
+    background-color: rgb(255, 145, 77);
+    width: 90%;
+    height: 14vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    border-radius: 2rem;
+    margin: 1rem;
+    font-size: 25px;
+}
+
+.primeiro-conteudo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    color: rgb(255, 145, 77);
+}
+
+.imagem-principal-feira {
+    border-radius: 1rem;
+    height: 40rem;
+    width: 40rem;
+}
+
+.botao-ver-fotos {
+    background-color: rgb(94, 23, 235);
+    color: white;
+
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+    width: 13rem;
+    height: 4rem;
+    margin-top: 2rem;
+
+    border-radius: 25rem;
+    border: none;
+
+    cursor: pointer;
+}
+
+.aside-descricao {
+    margin-left: 1rem;
+    padding-top: 22rem;
+    width: 30%;
+}
+
+.titulo-voce-sabia {
+    color: white;
+    background-color:rgb(94, 23, 235);
+    border-radius: 2rem;
+    width: 50%;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.segundo-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.blocos {
+    display: flex;
+    align-items: center;
+
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(255, 145, 77);
+    border-radius: 1rem;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 5rem;
+    width: 100%;
+   
+    margin-top: 5%;
+  
+    color: white;
+    background-color: rgb(127, 209, 209);
+    
+    border-radius: 10px;
+}
+
+.logo-footer {
+    width: 10%;
+    height: 80px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.icone {
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 320px) {
+    header {
+        width: 100%;
+        border-radius: 0%;
+   }
+
+   a {
+       font-size: small;
+   }
+
+   main {
+       width: 100%;
+   }
+
+   h1 {
+       width: 80%;
+       font-size: small;
+   }
+
+   .primeiro-conteudo {
+       width: 100%;
+       display: flex;
+       justify-content: column;
+       flex-wrap: wrap;
+       padding-top: 0.5rem;
+   }
+
+   .imagem-principal-feira {
+       align-items: center;
+       width: 15rem;
+       height: 15rem;
+    }
+
+    .aside-descricao {
+        padding-top: 1rem;
+        width: 60%;
+    }
+
+    .botao-ver-fotos {
+        font-size: 16px;
+        width: 8rem;
+        height: 2rem;
+        background-color: rgb(255, 145, 77);
+    }
+
+    .titulo-voce-sabia {
+        width: 70%;
+        height: 15vh;
+        font-size: 10px;
+    }
+
+    .blocos {
+        font-size: 14px;
+    }
+
+    footer {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .logo-footer {
+        width: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+        border-radius: 0%;
+    }
+ 
+    a {
+        font-size: small;
+    }
+ 
+    main {
+        width: 100%;
+    }
+ 
+    h1 {
+        width: 80%;
+        font-size: small;
+    }
+ 
+    .primeiro-conteudo {
+        width: 100%;
+        display: flex;
+        justify-content: column;
+        flex-wrap: wrap;
+        padding-top: 0.5rem;
+    }
+ 
+    .imagem-principal-feira {
+        align-items: center;
+        width: 15rem;
+        height: 15rem;
+    }
+ 
+    .aside-descricao {
+        padding-top: 1rem;
+        width: 60%;
+    }
+ 
+     .botao-ver-fotos {
+        font-size: 16px;
+        width: 8rem;
+        height: 2rem;
+        background-color: rgb(255, 145, 77);
+    }
+ 
+     .titulo-voce-sabia {
+        width: 70%;
+        height: 15vh;
+        font-size: 10px;
+    }
+
+    .segundo-conteudo {
+        display: flex;
+        justify-content: center;
+    }
+ 
+    .blocos {
+        font-size: 14px;
+    }
+ 
+     footer {
+        width: 100%;
+        border-radius: 0%;
+    }
+ 
+    .logo-footer {
+        width: 20%;
+    }
+ }
+
+@media screen and (max-width: 768px) {
+    .logo:hover {
+        width: 200px;
+        height: 200px;
+        transition: 1.5s;
+    }
+
+    a:hover {
+        font-size: 23px;
+        background-color: white;
+        color: rgb(127, 209, 209);
+        transition: 1s;
+    }
+
+    .primeiro-conteudo {
+        width: 100%;
+        display: flex;
+        justify-content: column;
+        flex-wrap: wrap;
+    }
+
+    .aside-descricao {
+        padding-top: 1rem;
+        width: 60%;
+    }
+
+    .segundo-conteudo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .logo:hover {
+        width: 200px;
+        height: 200px;
+        transition: 1.5s;
+    }
+
+    a:hover {
+        font-size: 23px;
+        background-color: white;
+        color: rgb(127, 209, 209);
+        transition: 1s;
+    }
+}
